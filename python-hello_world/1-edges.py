@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 word_first_3 = input()
 word_last_2 = input()
 middle_word = input()
