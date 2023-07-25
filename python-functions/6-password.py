@@ -2,23 +2,21 @@
 
 def validate_password(password):
     if len(password) < 8:
-        return False
+        return False    
+    capital = False
+    small = False
+    number = False
 
-    # Check for uppercase, lowercase, and digit
-    has_uppercase = False
-    has_lowercase = False
-    has_digit = False
-
-    for char in password:
-        if char.isspace():
+    for valid in password:
+        if valid.isspace():
             return False
-        if char.isupper():
-            has_uppercase = True
-        elif char.islower():
-            has_lowercase = True
-        elif char.isdigit():
-            has_digit = True
+        if valid.isupper():
+            capital = True
+        elif valid.islower():
+            small = True
+        elif valid.isdigit():
+            number = True
 
-    return has_uppercase and has_lowercase and has_digit                  
+    return capital and small and number                  
         
 # print(validate_password("password123"))
