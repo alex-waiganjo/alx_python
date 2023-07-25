@@ -1,4 +1,4 @@
 #!/usr/bin/env python3
 def add(a,b):
-    print( a+b)
-add(1,4)
+    return a+b
+print(add(1,2))
