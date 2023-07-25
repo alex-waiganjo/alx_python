@@ -20,4 +20,4 @@ def is_prime(number):
 #         return "False"
 #     else:
 #         return "False"    
-print(is_prime(-5))
+# print(is_prime(-5))
