@@ -1,13 +1,10 @@
 #!/usr/bin/env python3
-def fibonacci_sequence(n):     
-    fib_list = []
-    a, b = 0, 1
-    if a<n:
-        fib_list.append(a)
-        a, b = b, a + b 
-        while a<=n:   
-         fib_list.append(a)
-         a, b = b, a + b        
-        return fib_list    
-    return fib_list
-# print(fibonacci_sequence(4181))
+def fibonacci_sequence(n):
+    fibonacci_numbers = [0, 1]
+    while len(fibonacci_numbers) < n:
+        next_number = fibonacci_numbers[-1] + fibonacci_numbers[-2]
+        fibonacci_numbers.append(next_number)
+    return fibonacci_numbers[:n]
+
+n = 10
+fibonacci_numbers = fibonacci_sequence(n)
