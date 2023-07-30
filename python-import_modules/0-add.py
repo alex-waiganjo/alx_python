@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-# 0-add.py
 
 a = 1
 b = 2
