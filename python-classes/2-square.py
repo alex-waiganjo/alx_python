@@ -1,5 +1,11 @@
 #!/usr/bin/python3
+"""
+Getting the class instance and should be an integer
+"""
 class Square:
+    """
+Getting the class instance
+"""
     def __init__(self, size=0):
         if not isinstance(size, int):
             raise TypeError("size must be an integer")

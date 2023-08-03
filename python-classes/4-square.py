@@ -1,5 +1,11 @@
 #!/usr/bin/python3
+"""
+Using the @property and setter 
+"""
 class Square:
+    """
+Printing the stars 
+"""
     def __init__(self, size=0):
         self.size = size
 
