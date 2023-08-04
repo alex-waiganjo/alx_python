@@ -35,4 +35,4 @@ if __name__ == "__main__":
     bg = BaseGeometry()
     print(bg)
     print(dir(bg))
-    print(class_dir(BaseGeometry))
+    print(class_dir(BaseGeometry()))
