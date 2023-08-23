@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 """
-Script to list all State objects from 
-a MySQL database using SQLAlchemy
+Script to list all State objects from a MySQL database using SQLAlchemy
 """
 
 import sys
