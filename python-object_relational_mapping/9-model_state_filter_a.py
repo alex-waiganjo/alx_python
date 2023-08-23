@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Script to list all State objects containing the letter "a" from a MySQL database using SQLAlchemy"""
+"""
+Script to list all State objects containing the letter "a" from 
+a MySQL database using SQLAlchemy
+"""
 
 import sys
 from model_state import Base, State
@@ -25,7 +28,8 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     session = Session()
 
-    # Query and print State objects containing the letter "a" in ascending order by states.id
+    # Query and print State objects containing the letter "a" in
+    #  ascending order by states.id
     states_with_a = session.query(State).filter(
         State.name.like('%a%')).order_by(State.id).all()
     for state in states_with_a:

@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
-"""Script to print the first State object from a MySQL database using SQLAlchemy"""
+"""
+Script to print the first State object from a MySQL database using SQLAlchemy
+"""
 
 import sys
 from model_state import Base, State
