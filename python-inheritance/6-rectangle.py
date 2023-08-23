@@ -1,14 +1,27 @@
 #!/usr/bin/python3
-"""Define a class BaseGeometry with a public instance method"""
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+"""
+Creates a Rectangle class.
+"""
+
+
+BaseGeometry = __import__('5-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """Represents a class Rectangle that inherits from the base class"""
+    """class Rectangle that inherits from BaseGeometry (7-base_geometry.py).
+    Private instance attributes:
+        - width
+        - height
+    Inherits from BaseGeometry.
+    """
 
     def __init__(self, width, height):
-        """Initializes new rectangle"""
+        """Initializes an instance.
+        Args:
+            - width: width of the rectangle
+            - heigth: height of the rectangle
+        """
         self.integer_validator("width", width)
-        self.__width = width
         self.integer_validator("height", height)
+        self.__width = width
         self.__height = height
