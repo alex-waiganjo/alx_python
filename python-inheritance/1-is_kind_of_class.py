@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-"""Checks object class"""
+""" Python Inheritance """
 
 
 def is_kind_of_class(obj, a_class):
-    """Checks object class
-    Args:
-        - obj: object to class
-        - a_class: class to check
+    """
+    Return True if the object is an instance of,
+    or if the object is an instance
+
     """
     return isinstance(obj, a_class)
