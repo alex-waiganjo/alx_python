@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Writing the first route in flask"""
 from flask import Flask
 app = Flask(__name__)
 
