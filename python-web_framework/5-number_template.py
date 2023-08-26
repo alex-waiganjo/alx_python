@@ -19,9 +19,10 @@ def task_1():
     return 'HBNB'
 
 
-@app.route('/c<text>', strict_slashes=False)
+@app.route('/c/<text>', strict_slashes=False)
 def task_2(text):
-    return f'C  {text}'
+    word = text.split('_')
+    return f"C {' '.join(word)}"
 
 
 @app.route('/c/<text>', strict_slashes=False)
