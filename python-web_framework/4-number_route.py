@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ Writing five routes  """
-from flask import Flask,abort
+from flask import Flask, abort
 app = Flask(__name__)
 
 
@@ -28,13 +28,15 @@ def task_2(text):
 
 @app.route('/python/', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def task_3(text='cool'):
-    return f'Python  {text}'
+def task_3(text='is cool'):
+    word = text.split('_')
+
+    return f"Python {' '.join(word)}"
 
 
 @app.route('/number/<int:n>', strict_slashes=False)
-def task_4(n):      
-      return f'{n} is a number'
+def task_4(n):
+    return f'{n} is a number'
 
 
 if __name__ == "__main__":

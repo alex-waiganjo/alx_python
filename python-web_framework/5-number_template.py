@@ -25,9 +25,12 @@ def task_2(text):
     return f"C {' '.join(word)}"
 
 
-@app.route('/c/<text>', strict_slashes=False)
-def task_3(text):
-    return f'C {text}'_
+@app.route('/python/', strict_slashes=False)
+@app.route('/python/<text>', strict_slashes=False)
+def task_3(text='is cool'):
+    word = text.split('_')
+
+    return f"Python {' '.join(word)}"
 
 
 @app.route('/number/<n>', strict_slashes=False)
