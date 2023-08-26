@@ -38,6 +38,16 @@ def task_3(text='is cool'):
 def task_4(n):
     return f'{n} is a number'
 
+@app.route('/number/<float:n>', strict_slashes=False)
+def task_4_1(n):
+    abort(404)
+
+
+@app.route('/number/<str:n>', strict_slashes=False)
+def task_4_2(n):
+    abort(404)
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
