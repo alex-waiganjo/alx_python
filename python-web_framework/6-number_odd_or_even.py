@@ -1,12 +1,6 @@
 #!/usr/bin/python3
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
-
-
-@app.errorhandler(404)
-def error():
-
-    return "error"
 
 
 @app.route('/', strict_slashes=False)
@@ -33,29 +27,21 @@ def task_3(text='is cool'):
     return f"Python {' '.join(word)}"
 
 
-@app.route('/number/<n>', strict_slashes=False)
-def task_4(n):_
-    # if n is int():
-    #     return f'{n} is a number'
-    # else:
-    #     return error()
-pass
+# Display if n is integer
+@app.route('/number/<int:n>', strict_slashes=False)
+def task_4(n):
+    return f'{n} is a number'
 
 
-@app.route('/number_template/<n>', strict_slashes=False)
+@app.route('/number_template/<int:n>', strict_slashes=False)
 def task_5(n):
-    if n is int():
-        return render_template('5-number.html', num=n)
-    else:
-        return error()
+    return render_template('5-number.html', num=n)
 
 
-@app.route('/number_odd_or_even/<n>', strict_slashes=False)
+@app.route('/number_odd_or_even/<int:n>', strict_slashes=False)
 def task_6(n):
-    if n is int():
-        return render_template('6-number_odd_or_even', num=n)
-    else:
-        return error()
+
+    return render_template('6-number_odd_or_even.html', num=n)
 
 
 if __name__ == "__main__":
