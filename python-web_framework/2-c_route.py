@@ -16,7 +16,8 @@ def task_1():
 
 @app.route('/c/<text>', strict_slashes=False)
 def task_2(text):
-    return f'C {text}'
+    word = text.split('_')
+    return f"C {' '.join(word)}"
 
 
 if __name__ == "__main__":
