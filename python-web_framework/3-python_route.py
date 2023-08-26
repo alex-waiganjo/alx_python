@@ -13,10 +13,12 @@ def task_0():
 def task_1():
     return 'HBNB'
 
+
 @app.route('/c/<text>', strict_slashes=False)
 def task_2(text):
     word = text.split('_')
     return f"C {' '.join(word)}"
+
 
 @app.route('/python/', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
