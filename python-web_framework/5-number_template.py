@@ -51,12 +51,10 @@ def task_4_2(n):
     abort(404)
 
 
-@app.route('/number_template/<n>', strict_slashes=False)
+@app.route('/number_template/<int:n>', strict_slashes=False)
 def task_5(n):
-    if n is int():
-        return render_template('5-number.html', num=n)
-    else:
-        return error()
+    return render_template('5-number.html',num=n)
+    
 
 
 if __name__ == "__main__":
