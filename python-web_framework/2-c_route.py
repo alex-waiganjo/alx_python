@@ -11,7 +11,7 @@ def task_0():
 
 @app.route('/hbnb', strict_slashes=False)
 def task_1():
-    return 'HBNB!'
+    return 'HBNB'
 
 
 @app.route('/c/<text>', strict_slashes=False)
