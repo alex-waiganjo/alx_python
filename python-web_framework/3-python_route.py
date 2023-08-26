@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Writing four routes  """
 from flask import Flask
 app = Flask(__name__)
 
