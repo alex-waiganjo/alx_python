@@ -2,6 +2,7 @@
 """
 Script to list all State objects containing the letter "a" from 
 a MySQL database using SQLAlchemy
+
 """
 
 import sys
