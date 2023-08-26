@@ -20,8 +20,10 @@ def task_2(text):
 
 @app.route('/python/', strict_slashes=False)
 @app.route('/python/<text>', strict_slashes=False)
-def task_3(text='cool'):
-    return f'Python  {text}'
+def task_3(text='is cool'):
+    word = text.split('_')
+
+    return f"Python {' '.join(word)}"
 
 
 if __name__ == "__main__":
