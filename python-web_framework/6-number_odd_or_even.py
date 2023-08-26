@@ -16,7 +16,7 @@ def task_0():
 
 @app.route('/hbnb', strict_slashes=False)
 def task_1():
-    return 'HBNB!'
+    return 'HBNB'
 
 
 @app.route('/c<text>', strict_slashes=False)
@@ -31,10 +31,11 @@ def task_3(text='cool'):
 
 @app.route('/number/<n>', strict_slashes=False)
 def task_4(n):_
-    if n is int():
-        return f'{n} is a number'
-    else:
-        return error()
+    # if n is int():
+    #     return f'{n} is a number'
+    # else:
+    #     return error()
+pass
 
 
 @app.route('/number_template/<n>', strict_slashes=False)
