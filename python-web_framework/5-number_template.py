@@ -4,12 +4,6 @@ from flask import Flask, abort, render_template
 app = Flask(__name__)
 
 
-@app.errorhandler(404)
-def error():
-
-    return "error"
-
-
 @app.route('/', strict_slashes=False)
 def task_0():
     return 'Hello HBNB!'
@@ -54,8 +48,7 @@ def task_4_2(n):
 
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def task_5(n):
-    return render_template('5-number.html',num=n)
-    
+    return render_template('5-number.html', num=n)
 
 
 if __name__ == "__main__":
