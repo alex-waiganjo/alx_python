@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Routes for all the tasks"""
 from flask import Flask, render_template
 app = Flask(__name__)
 
