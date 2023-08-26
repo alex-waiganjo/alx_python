@@ -34,18 +34,6 @@ def task_4(n):
     return f'{n} is a number'
 
 
-# Display if n is float
-@app.route('/number/<float:n>', strict_slashes=False)
-def task_4_1(n):
-    abort(404)
-
-
-# Display if n is string
-@app.route('/number/<string:n>', strict_slashes=False)
-def task_4_2(n):
-    abort(404)
-
-
 @app.route('/number_template/<int:n>', strict_slashes=False)
 def task_5(n):
     return render_template('5-number.html', num=n)

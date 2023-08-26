@@ -28,16 +28,19 @@ def task_3(text='is cool'):
     return f"Python {' '.join(word)}"
 
 
+# Display if n is integer
 @app.route('/number/<int:n>', strict_slashes=False)
 def task_4(n):
     return f'{n} is a number'
 
 
+# Display if n is float
 @app.route('/number/<float:n>', strict_slashes=False)
 def task_4_1(n):
     abort(404)
 
 
+# Display if n is string
 @app.route('/number/<string:n>', strict_slashes=False)
 def task_4_2(n):
     abort(404)
