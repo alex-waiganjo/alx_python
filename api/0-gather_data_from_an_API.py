@@ -33,6 +33,9 @@ def get_data(id):
 
 
 if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print("Usage: python3 script_name.py employee_id")
+        sys.exit(1)
     
     id = int(sys.argv[1])
     get_data(id)
