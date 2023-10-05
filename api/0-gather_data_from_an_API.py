@@ -26,8 +26,8 @@ for task in user_todo.json():
 
 
 # print(len(f'Employee {emp_name} is done with tasks ({output}/{total}):'))
-print(len('Employee {} is done with tasks({}/{}):'
-      .format(emp_name, output, total)))
+print('Employee {} is done with tasks({}/{}):'
+      .format(emp_name, output, total))
 for task_title in m:
     print(f'\t{task_title}')
 
