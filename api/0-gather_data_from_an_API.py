@@ -1,5 +1,5 @@
 import requests
-import sys
+from sys import argv
 
 
 # def get_data(id):
@@ -69,7 +69,7 @@ import sys
 
 
 import requests
-from sys import argv
+# from sys import argv
 
 # Get the user_id from the command line arguments
 user_id = argv[1]
