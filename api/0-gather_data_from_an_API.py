@@ -1,5 +1,5 @@
 import requests
-import sys 
+import sys
 
 
 id = sys.argv[1]
@@ -30,7 +30,6 @@ print('Employee {} is done with tasks({}/{}):'
       .format(emp_name, output, total))
 for task_title in m:
     print(f'\t{task_title}')
-
 
 
 # if __name__ == '__main__':
@@ -69,6 +68,3 @@ for task_title in m:
 #             for v in m:
 #                 print(v)
 #     print(f'Employee {emp_name} is done with tasks ({output}/{total_no})')
-
-
-
