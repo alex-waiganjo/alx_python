@@ -7,7 +7,7 @@ user_data_url = f'https://jsonplaceholder.typicode.com/users/{id}'
 user_todos_url = f'https://jsonplaceholder.typicode.com/users/{id}/todos'
 output = 0
 
-    # Fetch user data
+# Fetch user data
 user_data = requests.get(user_data_url)
 user_todo = requests.get(user_todos_url)
 
@@ -24,8 +24,10 @@ for task in user_todo.json():
         output += 1
         m.append(task["title"])
 
-# Display employee TODO list progress
-print(f'Employee {emp_name} is done with tasks ({output}/{total}):')
+
+# print(len(f'Employee {emp_name} is done with tasks ({output}/{total}):'))
+print(len('Employee {} is done with tasks({}/{}):'
+      .format(emp_name, output, total)))
 for task_title in m:
     print(f'\t{task_title}')
 
